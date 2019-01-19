@@ -1,0 +1,12 @@
+runtime: python37
+
+# called `app` in `main.py`.
+handlers:
+- url: /js
+  static_dir: static/js
+- url: /css
+  static_dir: static/css
+- url: /img
+  static_dir: static/img
+- url: /.*
+  script: auto

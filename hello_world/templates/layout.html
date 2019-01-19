@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% block title %}
+			<title>test</title>
+		{% endblock title %}
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="{{ '/css/bootstrap.css' | verqs }}">
+		<script src="{{ '/js/jquery-1.12.4.js' | verqs }}"></script>
+		<script src="{{ '/js/bootstrap.js' | verqs }}"></script>
+		<script src="{{ '/js/jquery.binarytransport.js' | verqs }}"></script>
+		<script src="{{ '/js/ExifRestorer.js' | verqs }}"></script>
+		<script src="{{ '/js/MinifyJpegAsync.js' | verqs }}"></script>
+		{% block header %}
+		{% endblock header %}
+	</head>
+	<body>
+		{% block content %}
+		{% endblock content %}
+	</body>
+</html>
